@@ -1,0 +1,111 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+
+
+button {
+    display: block ;
+    margin: 20px;
+    width: 200px;
+    height: 75px;
+    cursor: pointer ;
+}
+
+/*Create a unique default style for each individual button*/
+
+button.btn-future {
+    color:rgb(34, 37, 15);
+    background-color: rgb(21, 145, 48);
+    transition-property: background-color ;
+    transition-duration: 1s ;
+    transition-delay: 1s;
+}
+
+/*Create a unique style for each individual button's hover state*/
+
+button.btn-future:hover {
+    background-color: rgb(196, 193, 32);
+
+}
+button.btn-present  {
+    background-color: aliceblue;
+    color: green;
+    letter-spacing: 0px;
+    font-size: 16px;
+    transition-property: color, letter-spacing, font-size;
+    transition-duration: 2.5s;
+
+
+
+
+}
+button.btn-present:hover  {
+    color: blueviolet;
+    letter-spacing: 12px;
+    font-size: 40px;
+
+
+
+
+}
+ 
+span {
+    display: none;
+
+
+
+}
+button.btn-present:hover span {
+display: inline;
+
+}
+button.btn-past {
+    background-color:cyan;
+    margin: 20px;
+width: 200px;
+height: 75px;
+padding: 20px;
+transition-duration: width, height, paddiing;
+transition-duration: 10s;
+transition-timing-function: ease-in-out;
+}
+
+button.btn-past:hover {
+    
+width: 600px;
+height: 225px;
+padding: 50px;
+}
+
+div.div-time {
+ margin-right: 100px;
+ border-radius: 20%;
+ opacity: 0;
+ padding: 40px;
+ background-color: azure;
+ transition-property: margin-right, border-radius, opacity, padding, background-clor;
+ transition-duration: 1s;
+ transition-timing-function: ease-in-out;
+
+
+
+}
+div.div-time:hover { 
+    margin-right: 100px;
+    background-color:coral;
+    opacity: 1;
+    border-radius: 20%;
+    padding: 40px;
+
+}
+
+
+.hi {
+    display: none;
+}
+
+div:hover .secret {
+    display: inline;
+}
